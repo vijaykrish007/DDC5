@@ -76,7 +76,7 @@
         "type": "function",
         "z": "41f6237a.5709ec",
         "name": "",
-        "func": "msg.payload= msg.payload.toUpperCase();\nreturn msg;",
+        "func": "let name= msg.payload\nmsg.vijay =name.toUpperCase();\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
