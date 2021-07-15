@@ -1,1 +1,74 @@
-[]
+[
+    {
+        "id": "41f6237a.5709ec",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "28ea3f0a.91d4a",
+        "type": "inject",
+        "z": "41f6237a.5709ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "1aed867.2a3567a"
+            ]
+        ]
+    },
+    {
+        "id": "1aed867.2a3567a",
+        "type": "function",
+        "z": "41f6237a.5709ec",
+        "name": "",
+        "func": "msg.apyload=\"Welcome to Node red world\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "da68167b.6324c8"
+            ]
+        ]
+    },
+    {
+        "id": "da68167b.6324c8",
+        "type": "debug",
+        "z": "41f6237a.5709ec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 240,
+        "wires": []
+    }
+]
