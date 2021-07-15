@@ -50,6 +50,7 @@
         "y": 140,
         "wires": [
             [
+                "c5afbdb4.6f429",
                 "da68167b.6324c8"
             ]
         ]
@@ -70,5 +71,24 @@
         "x": 540,
         "y": 240,
         "wires": []
+    },
+    {
+        "id": "c5afbdb4.6f429",
+        "type": "function",
+        "z": "41f6237a.5709ec",
+        "name": "",
+        "func": "msg.payload=msg.payload.toUpperCase();\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 120,
+        "wires": [
+            [
+                "da68167b.6324c8"
+            ]
+        ]
     }
 ]
