@@ -40,7 +40,7 @@
         "type": "function",
         "z": "41f6237a.5709ec",
         "name": "",
-        "func": "msg.apyload=\"Welcome to Node red world\"\nreturn msg;",
+        "func": "msg.payload=\"Welcome to Node-red world\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -50,8 +50,7 @@
         "y": 140,
         "wires": [
             [
-                "c5afbdb4.6f429",
-                "da68167b.6324c8"
+                "c5afbdb4.6f429"
             ]
         ]
     },
@@ -77,7 +76,7 @@
         "type": "function",
         "z": "41f6237a.5709ec",
         "name": "",
-        "func": "msg.payload=msg.payload.toUpperCase();\nreturn msg;",
+        "func": "msg.payload= msg.payload.toUpperCase();\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
